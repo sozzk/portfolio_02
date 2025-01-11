@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="css/font.css">
+  <!--웹아이콘 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- js -->
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- #header 시작 -->
+    <header id="header">
+      <div class="inner">
+        <div class="header-top">
+          <h1>
+            <a href="#">
+              <img src="img/common/logo_main.png" alt="로고">
+              <span>부산광역시 사하구<b>을숙도문화회관</b></span>
+            </a>
+          </h1>
+          <ol>
+            <li class="btn_sch"><a href="#">검색</a></li>
+            <li><a href="index.html">홈</a></li>
+            <li class="site_map"><a href="#">전체메뉴</a></li>
+          </ol>
+        </div><!-- header-top -->
+        <!-- 검색_헤더탑 영역 바로아래로 앱솔띄워짐 -->
+        <div class="search">
+          <form action="">
+            <fieldset>
+              <legend>검색영역</legend>
+              <div class="sch_box">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <input type="submit" value="검색">
+              </div>
+            </fieldset>
+          </form>
+        </div><!-- search -->
+        <nav>
+          <ul class="gnb">
+            <li><a href="sub/greeting.html">문화회관소개</a>
+              <ul class="depth2">
+                <li><a href="sub/greeting.html">인사말</a></li>
+                <li><a href="#">회관안내</a></li>
+                <li><a href="#">시설안내</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="#">공연·전시 안내</a>
+              <ul class="depth2">
+                <li><a href="#">기획공연전시</a></li>
+                <li><a href="#">대관공연전시</a></li>
+                <li><a href="#">연간일정</a></li>
+                <li><a href="#">공연관람 예절</a></li>
+              </ul>
+            </li>
+            <li><a href="#">예매·예약하기</a>
+              <ul class="depth2">
+                <li><a href="#">공연 예매하기</a></li>
+                <li><a href="#">전시 예약하기</a></li>
+                <li><a href="#">예매안내</a></li>
+                <li><a href="#">좌석 배치도</a></li>
+              </ul>
+            </li>
+            <li><a href="sub/guide.html">대관안내</a>
+              <ul class="depth2">
+                <li><a href="sub/guide.html">대관안내</a></li>
+                <li><a href="#">대관 사용료</a></li>
+                <li><a href="#">대관신청</a></li>
+              </ul>
+            </li>
+            <li><a href="#">열린공간</a>
+              <ul class="depth2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">관람후기</a></li>
+                <li><a href="#">공연알림 신청</a></li>
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">도서</a></li>
+              </ul>
+            </li>
+            <li><a href="#">을숙도 들락날락</a>
+              <ul class="depth2">
+                <li><a href="#">들락날락 소개</a></li>
+                <li><a href="#">예약하기</a></li>
+                <li><a href="#">이용안내</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="mgnb_wrap"><!-- 모바일메뉴시작 -->
+            <div class="mgnb_top"> 부산광역시 사하구<br><b>을숙도문화회관</b></div>
+            <button class="mgnb_close">모바일메뉴 닫기</button>
+            <div class="inner">
+
+              <ul class="mgnb">
+                <li class="active"><a href="#">문화회관소개</a> </li>
+                <li><a href="#">공연·전시 안내</a></li>
+                <li><a href="#">예매·예약하기</a></li>
+                <li><a href="#">대관안내</a> </li>
+                <li><a href="#">열린공간</a></li>
+                <li><a href="#">을숙도 들락날락</a></li>
+              </ul>
+              <div class="mdepth2">
+                <ul class="mdepth2_li1">
+                  <li><a href="sub/greeting.html">인사말</a></li>
+                  <li><a href="#">회관안내</a></li>
+                  <li><a href="#">시설안내</a></li>
+                  <li><a href="#">이용안내</a></li>
+                  <li><a href="#">찾아오시는길</a></li>
+                </ul>
+                <ul class="mdepth2_li2">
+                  <li><a href="#">기획공연전시</a></li>
+                  <li><a href="#">대관공연전시</a></li>
+                  <li><a href="#">연간일정</a></li>
+                  <li><a href="#">공연관람 예절</a></li>
+                </ul>
+                <ul class="mdepth2_li3">
+                  <li><a href="#">공연 예매하기</a></li>
+                  <li><a href="#">전시 예약하기</a></li>
+                  <li><a href="#">예매안내</a></li>
+                  <li><a href="#">좌석 배치도</a></li>
+                </ul>
+                <ul class="mdepth2_li4">
+                  <li><a href="sub/guide.html">대관안내</a></li>
+                  <li><a href="#">대관 사용료</a></li>
+                  <li><a href="#">대관신청</a></li>
+                </ul>
+                <ul class="mdepth2_li5">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">관람후기</a></li>
+                  <li><a href="#">공연알림 신청</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                  <li><a href="#">도서</a></li>
+                </ul>
+                <ul class="mdepth2_li6">
+                  <li><a href="#">들락날락 소개</a></li>
+                  <li><a href="#">예약하기</a></li>
+                  <li><a href="#">이용안내</a></li>
+                </ul>
+              </div><!-- mdepth2 -->
+            </div><!-- inner -->
+          </div><!-- mgnb_wrap -->
+        </nav>
+        <button class="ham">모바일 메뉴보기</button>
+      </div><!-- inner -->
+    </header>
+    <div class="mgnb_dimmed"></div>
+
+    <!-- #main 시작 -->
+    <main id="main">
+      <!-- section01 시작 -->
+      <section class="main_banner">
+        <div class="swiper mb">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="img/main/m_banner01.jpg" alt="메인배너1">
+            </li>
+            <li class="swiper-slide"><img src="img/main/m_banner02.jpg" alt="메인배너2">
+            </li>
+            <li class="swiper-slide"><img src="img/main/m_banner03.jpg" alt="메인배너3">
+            </li>
+          </ul>
+        </div><!-- swiper mb -->
+        <p data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">문화예술의 향기를 느낄 수 있는<br>
+          서부산권 문화의 전당</p>
+
+
+        <div class="mb_control">
+          <div class="swiper-pagination-progressbar"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <img class="btn_play" src="img/main/ico_play.svg" alt="재생">
+          <img class="btn_pause" src="img/main/ico_pause.svg" alt="일시정지">
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-pagination-bullets"></div>
+      </section><!-- section01 끝. -->
+
+      <!-- section02 시작 -->
+      <section class="poster" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <h2>7월</h2>
+        <div class="swiper po_list">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="img/main/poster01.jpg" alt="포스터01">
+              <h4>[공연]<br> 클래식 피아노 콘서트</h4>
+              <p class="txt">여름 밤의 더위를 날려줄 환상적인 클래식<br>
+                피아노의 세계로 여러분을 초대합니다.</p>
+              <p class="date"><i>일자 :</i> 2024.07.27(토) 19:30<br>
+                <i>장소 :</i> 을숙도문화회관 대공연장
+              </p>
+              <a href="#">예매하기</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/main/poster02.jpg" alt="포스터02">
+              <h4>[공연]<br> 심포니 오케스트라 </h4>
+              <p class="txt">국립 심포니 오케스트라가 부산시민을 위해<br>
+                다채롭고 아름다운 관현악의 선율로 찾아옵니다. </p>
+              <p class="date"><i>일자 :</i> 2024.07.17(수) 19:00<br>
+                <i>장소 :</i> 을숙도문화회관 대공연장
+              </p>
+              <a href="#">예매하기</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/main/poster03.jpg" alt="포스터03">
+              <h4>[전시]<br> 필름사진 전시회 </h4>
+              <p class="txt">일상에 지친 당신을 위한 힐링의 시간 필름 속에<br> 담긴 대자연을 바라보며 나를 치유합니다.</p>
+              <p class="date"><i>일자 :</i> 2024.07.06(토)~09(화)<br>
+                <i>장소 :</i> 을숙도문화회관 제1전시관
+              </p>
+              <a href="#">예매하기</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/main/poster04.jpg" alt="포스터04">
+              <h4>[공연]<br> 첼로 단독 연주회 </h4>
+              <p class="txt">세계적인 첼리스트 자클린 뒤프레가 보여주는<br>
+                중후한 첼로의 매력 속으로 당신을 초대합니다.</p>
+              <p class="date"><i>일자 :</i> 2024.07.14(금) 14:00<br>
+                <i>장소 :</i> 을숙도문화회관 제1전시관
+              </p>
+              <a href="#">예매하기</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/main/poster05.jpg" alt="포스터05">
+              <h4>[공연]<br> 퓨전 댄스 공연 </h4>
+              <p class="txt">팀메이크가 아름답고도 강렬한 몸짓으로 표현<br>
+                하는 과거와 현재 그리고 미래의 만남. </p>
+              <p class="date"><i>일자 :</i> 2024.07.19(금) 19:00<br>
+                <i>장소 :</i> 을숙도문화회관 대공연장
+              </p>
+              <a href="#">예매하기</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <div class="mo_tit">이달의 공연 및 전시</div>
+      </section><!-- section02 끝. -->
+
+      <!-- section03 시작 -->
+      <section class="quick" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="inner">
+          <ul>
+            <li><a href="#"><img src="img/main/ico_schedule.svg" alt="공연일정">공연일정</a></li>
+            <li><a href="#"><img src="img/main/ico_ticket.svg" alt="티켓예매">티켓예매</a></li>
+            <li><a href="#"><img src="img/main/ico_rental.svg" alt="대관안내">대관안내</a></li>
+            <li><a href="#"><img src="img/main/ico_fee.svg" alt="대관이용료">대관이용료</a></li>
+            <li><a href="#"><img src="img/main/ico_guide.svg" alt="시설안내">시설안내</a></li>
+            <li><a href="#"><img src="img/main/ico_route.svg" alt="찾아오는길">찾아오는길</a></li>
+          </ul>
+        </div>
+      </section><!-- section03 끝. -->
+
+      <!-- section04 시작 -->
+      <section class="schedule" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="inner">
+
+          <!-- left -->
+          <div class="left">
+            <p>사람과 자연 그리고<br>문화가 함께하는<br><i>을숙도 문화회관</i>
+            </p>
+          </div>
+          <!-- right -->
+          <div class="right">
+            <!-- 1 -->
+            <div class="calendar">
+              <span>7월</span>
+              <ul>
+                <li>
+                  <a href="#">7</a>
+                  <a href="#">14</a>
+                  <a href="#">21</a>
+                  <a href="#">28</a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                  <a href="#">8</a>
+                  <a href="#">15</a>
+                  <a href="#">22</a>
+                  <a href="#">29</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                  <a href="#">9</a>
+                  <a href="#">16</a>
+                  <a href="#">23</a>
+                  <a href="#">30</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                  <a href="#">10</a>
+                  <a href="#">17</a>
+                  <a href="#">24</a>
+                  <a href="#">31</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                  <a href="#">11</a>
+                  <a href="#">20</a>
+                  <a href="#">25</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                  <a href="#">12</a>
+                  <a href="#">19</a>
+                  <a href="#">26</a>
+                </li>
+                <li>
+                  <a href="#">6</a>
+                  <a href="#">13</a>
+                  <a href="#">20</a>
+                  <a href="#">27</a>
+                </li>
+              </ul>
+            </div><!-- calendar -->
+
+            <!-- 2 -->
+            <div class="perform_list">
+              <ul class="list_tit">
+                <li class="all_tit active">이번달 전체 일정</li>
+                <li class="select_tit">선택한 일자 일정</li>
+              </ul>
+
+              <div class="list_content">
+                <ul class="scrollbox">
+                  <li class="all_content content">
+                    <ul>
+                      <li><a href="#">판소리 흥보가 연창회</a></li>
+                      <li><a href="#">제42회 예술공감 [썸남썸녀]</a></li>
+                      <li><a href="#">기획전시 [네가 가장 좋아하는 색은 뭐니?]</a></li>
+                      <li><a href="#">제94회 [명품콘서트 부산지휘자합창단 모차르트 레퀴엠</a></li>
+                      <li><a href="#">제43회 예술공감 [피아노와 함께 놀까?]</a></li>
+                      <li><a href="#">제9회 어린이 오페라 [베르디 ‘아이다’]</a></li>
+                      <li><a href="#">제44회 예술공감 [테너 이창원의 모노음악극 ’마중’]</a></li>
+                      <li><a href="#">제45회 예술공감 [아트콘서트 ‘꽃 피우다’]</a></li>
+                      <li><a href="#">제27회 굿모닝콘서트 [카타오라리사 교수의 고토 아리랑</a></li>
+                    </ul>
+                  </li><!-- all_content -->
+                  <li class="select_content content">
+                    <ul>
+                      <li><a href="#">기획전시 [네가 가장 좋아하는 색은 뭐니?]</a></li>
+                      <li><a href="#">기획전시 [네가 가장 좋아하는 색은 뭐니?]</a></li>
+                      <li><a href="#">기획전시 [네가 가장 좋아하는 색은 뭐니?]</a></li>
+                    </ul>
+                  </li><!-- select_content -->
+                </ul><!-- list_content -->
+              </div>
+
+            </div><!-- perform_list -->
+
+            <!-- 3 -->
+            <div class="sch_tit">
+              <h2>공연전시<br>스케줄</h2>
+              <div class="more"><a href="#">더보기</a></div>
+            </div><!-- sch_tit -->
+          </div>
+
+          <div class="mo_tit">
+            <h2>공연전시 스케줄</h2>
+            <div class="more"><a href="#">더보기</a></div>
+          </div>
+        </div><!-- inner -->
+      </section><!-- section04. 끝 -->
+
+
+
+
+      <!-- section05 시작 -->
+      <section class="notice" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="inner">
+          <!-- left -->
+          <div class="nt_left">
+            <div class="nt_tit">
+              <h2>공지사항<br>이벤트</h2>
+              <div class="more"><a href="#">더보기</a></div>
+            </div><!-- nt_tit -->
+
+            <div class="nt_list">
+              <ul>
+                <li><a href="#">
+                    <span>[모집] 을숙도 들락날락 ‘컬러크러쉬-어린이 미술 체험 프로그램' 참가자 모집</span>
+                    <em>2024. 06. 19</em>
+                  </a></li>
+                <li><a href="#">
+                    <span> [모집] 을숙도 문화회관 명품아카데미 문화강좌 2분기 수강생 모집 수강생 모집</span>
+                    <em>2024. 05. 09</em>
+                  </a></li>
+                <li><a href="#">
+                    <span>[모집] 을숙도 들락날락 ‘맘껏놀자’ 어린이 신체활동 참가자 모집 </span>
+                    <em>2024. 05. 13</em>
+                  </a></li>
+                <li><a href="#">
+                    <span>[공지] 을숙도 들락날락(단체 및 개인) 예약안내</span>
+                    <em>2024. 03. 20</em>
+                  </a></li>
+                <li><a href="#">
+                    <span>[공지] 공연자 안전교육 수료 안내</span><em>2024. 03. 17</em>
+                  </a></li>
+              </ul>
+            </div><!-- nt_list -->
+          </div><!-- nt_left -->
+
+          <!-- rigth -->
+          <div class="nt_right"></div><!-- nt_right-->
+
+          <div class="mo_tit">
+            <h2>공지사항 이벤트</h2>
+            <div class="more"><a href="#">더보기</a></div>
+          </div>
+        </div><!-- inner -->
+      </section><!-- section05 끝. -->
+
+
+
+      <!-- section06 시작 -->
+      <section class="dlnl" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="inner">
+          <h2>을숙도 들락날락</h2>
+          <div>
+            <article class="dlnl_left">
+              <div class="dlnl_b1f facility">
+                <a href="#">
+                  <div class="cover">B1F <br>아뜰리에</div>
+                  <dl>
+                    <dt>B1F <br>아뜰리에 </dt>
+                    <dd><i>[ 인터렉티브존 ]</i><br>
+                      어린이 예술가 / 셀피드로잉 / 팡팡 볼풀장<br>
+                      레인보우 큐브 / 자이언트 컬러링</dd>
+                    <dd><i>[ 쑥쑥도서관 ]</i></dd>
+                    <dd><i>[ 쑥쑥랜드 ]</i></dd>
+                  </dl>
+                </a>
+              </div>
+              <div class="dlnl_logo facility">
+                <a href="#">
+                  <img src="img/main/deullagnallag_logo.png" alt="들락날락">
+                </a>
+              </div>
+              <div class="dlnl_1f facility">
+                <a href="#">
+                  <div class="cover">1F <br>쑥갤러리</div>
+                  <dl>
+                    <dt>1F <br>쑥갤러리</dt>
+                    <dd><i>[ 임팩트존 ]</i><br>
+                      큐브 조형물</dd>
+                    <dd><i>[ 갤러리 ]</i><br>
+                      전시관1 / 전시관2 / 전시관3</dd>
+                  </dl>
+                </a>
+              </div>
+              <div class="dlnl_2f facility">
+                <a href="#">
+                  <div class="cover">2F <br>쑥케치북</div>
+                  <dl>
+                    <dt>2F <br>쑥케치북</dt>
+                    <dd><i>[ 낙서자유구역 ]</i><br>
+                      드림윌 컬러링 / 드림캔버스 / 부욱부욱</dd>
+                  </dl>
+                </a>
+              </div>
+              <div class="dlnl_3f facility">
+                <a href="#">
+                  <div class="cover">3F <br>카페/전망대</div>
+                  <dl>
+                    <dt>3F <br>카페/전망대</dt>
+                    <dd></dd>
+                  </dl>
+                </a>
+              </div>
+              <div class="dlnl_conv facility">
+                <a href="#">
+                  <div class="cover">편의시설</div>
+                  <dl>
+                    <dt>편의시설</dt>
+                    <dd>가족휴게실(수유실, 기저귀갈이대)<br>
+                      화장실, 유모차 보관소,<br>
+                      장애인시설, 외부 엘리베이터</dd>
+                  </dl>
+                </a>
+              </div>
+            </article><!-- dlnl_left -->
+
+            <article class="dlnl_right">
+              <div class="dlnl_tit">
+                <h4>어린이 복합문화공간<br><span>'들락날락'</span></h4>
+                <p><i>어린이 복합문화공간</i>'들락날락’은<br>
+                  아날로그와 디지털 콘텐츠를 융합한<br>
+                  새로운 개념의 놀이형 학습공간입니다.
+                </p>
+              </div>
+              <div class="dlnl_info">
+                <div>
+                  <dl>
+                    <dt>[ 운영시간 ]</dt>
+                    <dd>- 화요일~일요일 10:00 ~ 17:30<br>
+                      - 월요일 및 공휴일 휴무<br>
+                      - 1일 총 3회차 운영</dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
+                    <dt>[ 문의 ]</dt>
+                    <dd>
+                      - 을숙도 들락날락 <a href="tel:051-294-0505"> 051. 294. 0505</a><br>
+                      - 을숙도 문화회관 <a href="tel:051-220-8526"> 051. 220. 8526</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div><!-- dlnl_info -->
+              <a href="#" class="reserve">예약하기</a>
+            </article><!-- dlnl_right -->
+          </div><!-- content -->
+        </div><!-- inner -->
+      </section><!-- section06끝. -->
+
+
+      <!-- sectuib07 시작 -->
+      <section class="promotion" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="inner">
+          <h2>공연 및 홍보영상</h2>
+          <div class="swiper video">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gZkT-MfvMbA?si=0cVtn40eW042C3GB"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7g4kpx3QAN0?si=LMv86OndKLYG5tlw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bv7XbIyusC4?si=yhxW9TnoKuMz2IZZ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rp14A7UqFJ4?si=5dAWVbILgqMuuapk"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g6poxLfB5Io?si=0CHRFc80ryRIkpQ7"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gZkT-MfvMbA?si=0cVtn40eW042C3GB"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7g4kpx3QAN0?si=LMv86OndKLYG5tlw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bv7XbIyusC4?si=yhxW9TnoKuMz2IZZ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rp14A7UqFJ4?si=5dAWVbILgqMuuapk"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+              <li class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g6poxLfB5Io?si=0CHRFc80ryRIkpQ7"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </li>
+            </ul>
+          </div><!-- swiper video -->
+        </div><!-- inner -->
+      </section><!-- section07 끝. -->
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="inner">
+        <img src="img/common/logo_f.png" alt="푸터로고">
+        <address>부산광역시 사하구 낙동남로1233번길 25 (하단동)<br> 을숙도문화회관 팩스 051-220-5809</address>
+        <p>공연예술팀: <a href="tel:051-220-5811 ">051-220-5811 ~ 5814</a>(기획공연)<br><span>관리지원팀: <a href="tel:051-220-5822">
+              051-220-5822</a>(대관,기획전시)</span></p>
+        <p>본 웹사이트에 게시된 이메일 주소가 자동수집되는 것을 거부하며,<br> 이를 위반시 정보통신망법에 의한 처벌됨을 유념하시기 바랍니다.</p>
+        <p>Copyrightⓒ 2024, Saha-gu. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- quick -->
+    <div class="quick_menu" data-aos="fade-up" data-aos-duration="1000">
+      <ul>
+        <li><a href="#">공연예매</a></li>
+        <li><a href="#">전시예매</a></li>
+        <li><a href="#">대관신청</a></li>
+        <li><a href="#">TOP</a></li>
+      </ul>
+    </div><!-- quick_menu -->
+  </div><!-- wrap -->
+
+
+  <!-- 사이트맵 -->
+  <div id="map">
+    <div class="map_logo">
+      <h2>
+        <img src="img/common/logo_main.png" alt="로고">
+        <span>부산광역시 사하구<b>을숙도문화회관</b></span>
+      </h2>
+    </div><!-- map_logo -->
+    <div class="map_menu">
+      <dl class="m1">
+        <dt>문화회관 소개</dt>
+        <dd><a href="sub/greeting.html">인사말</a></dd>
+        <dd><a href="#">회관안내</a></dd>
+        <dd><a href="#">시설안내</a></dd>
+        <dd><a href="#">이용안내</a></dd>
+        <dd><a href="#">찾아오시는길</a></dd>
+      </dl>
+      <dl class="m2">
+        <dt>공연·전시 안내</dt>
+        <dd><a href="#">기획공연전시</a></dd>
+        <dd><a href="#">대관공연전시</a></dd>
+        <dd><a href="#">연간일정</a></dd>
+        <dd><a href="#">공연관람 예절</a></dd>
+      </dl>
+      <dl class="m3">
+        <dt>예매·예약하기</dt>
+        <dd><a href="#">공연 예매하기</a></dd>
+        <dd><a href="#">전시 예약하기</a></dd>
+        <dd><a href="#">예매안내</a></dd>
+        <dd><a href="#">좌석 배치도</a></dd>
+      </dl>
+      <dl class="m4">
+        <dt>대관안내</dt>
+        <dd><a href="sub/guide.html">대관안내</a></dd>
+        <dd><a href="#">대관 사용료</a></dd>
+        <dd><a href="#">대관신청</a></dd>
+      </dl>
+      <dl class="m5">
+        <dt>열린공간</dt>
+        <dd><a href="#">공지사항</a></dd>
+        <dd><a href="#">관람후기</a></dd>
+        <dd><a href="#">공연알림 신청</a></dd>
+        <dd><a href="#">자유게시판</a></dd>
+        <dd><a href="#">도서</a></dd>
+      </dl>
+      <dl class="m6">
+        <dt>을숙도 들락날락</dt>
+        <dd><a href="#">들락날락 소개</a></dd>
+        <dd><a href="#">예약하기</a></dd>
+        <dd><a href="#">이용안내</a></dd>
+      </dl>
+    </div><!--map_menu -->
+    <img class="map_close" src="img/main/map_close.svg" alt="닫기">
+  </div><!-- map -->
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
